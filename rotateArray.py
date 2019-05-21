@@ -12,7 +12,7 @@ def rotate(list,rot):
     length = len(list)
     newList = []
     for place in range(0,length):
-        newList.append(list[(place+rot)%length])
+        newList.append(list[(place+rot+1)%length])
     print(newList)
 
 list = [1,2,3,4,5,6,7]
